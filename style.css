@@ -10,9 +10,8 @@ body {
  }
 
 .card-mobile {
-    background: linear-gradient(to bottom right, #49521b,#19250f);
+    background: linear-gradient(to bottom right, #7CAFE5,#723C99);
     border-radius: 5%;
-    ;
     position:relative;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     height: 100%;
@@ -28,6 +27,10 @@ body {
     display:none;
 }
 
+ #introduction {
+    margin-top: 5rem;
+}
+
 #name {
     display: flex;
     flex-direction: row;
@@ -36,32 +39,20 @@ body {
 
 #first{
     text-decoration: none;
-    color:#b9d91a;
+    color:#e1be5f;
 }
 
-#first:active{
-    color:#d5ff01;
+a #first:visited{
+    color:#bd563c;
 }
-#first:hover {
-    color:aliceblue;
-}
-#first:visited{
-    color:#9c351b;
-}
-
 
 #second {
     text-decoration: none;
-    color:#e1db5f;
+    color:#e1be5f;
 }
-#second:active{
-    color: #fff987;
-}
-#second:hover{
-    color:#fff42a;
-}
-#second:visited{
-    color:#895200;
+
+a #second:visited{
+    color:#bd563c;
 }
 
 .photo {
@@ -71,17 +62,20 @@ body {
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    ;
     display: flex;
     justify-content: flex-start;
-    
+    -webkit-transition: all 1s 0.1s ease-in;
+}
+.photo:hover{
+    -webkit-transform: rotate(360deg);
+    border: 0.5rem solid rgba(0, 0, 0, 0.289) ;
 }
 
 h1{
     font-family: 'DM Serif Display', serif;
     font-size: 2.5rem;
     font-weight: 37.5rem;
-    color:rgb(152, 160, 101);
+    color:rgba(226, 232, 147, 0.914);
     text-align: end;
     margin: 0;
 }
@@ -90,29 +84,15 @@ p{
     font-family: 'DM Serif Display', serif;
     font-size: 1.3rem;
     font-weight: 25rem;
-    color:rgb(152, 160, 101);
-    ;
+    color:rgba(226, 232, 147, 0.914);
 }
 
 
 @media only screen and (min-width: 28rem) and (max-width:47.5rem){
-    * {
-        box-sizing: border-box;
-    }
-    
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5% 10%;
-     }
-
-     
-    
+   
     .card-tablet {
-        background: linear-gradient(to bottom right, #49521b,#19250f);
+        background: linear-gradient(to bottom right, #7CAFE5,#723C99);
         border-radius: 5%;
-        ;
         position:relative;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
         height: auto;
@@ -120,7 +100,6 @@ p{
         padding: 6%;
         display: flex;
         flex-direction: column;
-    
     }
 
     .card-desktop{
@@ -130,96 +109,37 @@ p{
     .card-mobile{
         display: none;
     }
-
-    #name {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    #first{
-        text-decoration: none;
-        color:#b9d91a;
-    }
-    
-    #first:active{
-        color:#d5ff01;
-    }
-    #first:hover {
-        color:aliceblue;
-    }
-    #first:visited{
-        color:#9c351b;
-    }
-    
-    
-    #second {
-        text-decoration: none;
-        color:#e1db5f;
-    }
-    #second:active{
-        color: #fff987;
-    }
-    #second:hover{
-        color:#fff42a;
-    }
-    #second:visited{
-        color:#895200;
-    }
     
     .photo {
         height: 10rem;
         width: 10rem;
-        background-image: url(./image/Misha-green.jpg);
-        background-size: cover;
-        background-position: center;
         position:absolute;
         top:-1.60rem;
         left:-1.60rem;
         border-radius: 50%;
-        ;
-        display: flex;
-        justify-content: flex-start;
-        
+        -webkit-transition: all 1s 0.1s ease-in;
+    }
+    .photo:hover{
+        -webkit-transform: rotate(180deg);
     }
     
     h1{
-        font-family: 'DM Serif Display', serif;
         font-size: 3rem;
-        font-weight: 37.5rem;
-        color:rgb(152, 160, 101);
-        text-align: end;
-        ;
-        margin: 0;
         display:flex;
         justify-content: flex-end;
     }
     
     p{
-        font-family: 'DM Serif Display', serif;
         font-size: 1.8rem;
-        font-weight: 25rem;
-        color:rgb(152, 160, 101);
-        ;
     }
 }
 
 
 
 @media only screen and (min-width:47.6rem) {
-    * {
-        box-sizing: border-box;
-    }
-    
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5% 10%;
-        margin:0;
-     }
     
     .card-desktop {
-        background: linear-gradient(to bottom right, #49521b,#19250f);
+        background: linear-gradient(to bottom right, #7CAFE5,#723C99);
         border-radius: 5%;
         position:relative;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
@@ -235,73 +155,20 @@ p{
         display:none;
     }
     
-    #name {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    #first{
-        text-decoration: none;
-        color:#b9d91a;
-    }
-    
-    #first:active{
-        color:#d5ff01;
-    }
-    #first:hover {
-        color:aliceblue;
-    }
-    #first:visited{
-        color:#9c351b;
-    }
-    
-    
-    #second {
-        text-decoration: none;
-        color:#e1db5f;
-    }
-    #second:active{
-        color: #fff987;
-    }
-    #second:hover{
-        color:#fff42a;
-    }
-    #second:visited{
-        color:#895200;
-    }
-    
     .photo {
         height:15rem;
         width: 15rem;
-        background-image: url(./image/Misha-green.jpg);
-        background-size: cover;
-        background-position: center;
         position:absolute;
         top: 1rem;
         margin: 1rem 0;
-        border-radius: 50%;
-        ;
-        display: flex;
-        justify-content: flex-start;
-        
     }
     
     h1{
-        font-family: 'DM Serif Display', serif;
         font-size: 4rem;
-        font-weight: 37.5rem;
-        color:rgb(152, 160, 101);
-        text-align: end;
-        ;
-        margin: 0;
         letter-spacing: 0.2rem;
     }
     
     p{
-        font-family: 'DM Serif Display', serif;
-        font-size: 2rem;
-        font-weight: 25rem;
-        color:rgb(152, 160, 101);
+        font-size: 3rem;
     }
 }
